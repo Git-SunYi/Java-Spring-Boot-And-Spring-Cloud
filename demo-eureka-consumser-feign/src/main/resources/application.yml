@@ -1,0 +1,14 @@
+server:
+  port: 7006
+spring:
+  application:
+    name: eureka-consumser-feign
+eureka:
+  client:
+    service-url:
+      defaultZone: http://server1:7000/eureka/
+  instance:
+    prefer-ip-address: true
+feign:
+  circuitbreaker:
+    enabled: true           #开启熔断器

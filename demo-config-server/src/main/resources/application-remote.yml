@@ -1,0 +1,14 @@
+server:
+  port: 9005
+
+spring:
+  application:
+    name: springcloud-config-server
+    cloud:
+      config:
+        server:
+          get:
+            uri: https://github.com/Git-SunYi/Java-Spring-Boot-And-Spring-Cloud.git
+            search-paths: /demo-config-server/src/main/resources/
+            username: Git-SunYi
+            password: Sunyi2001.2.6
